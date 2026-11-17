@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Outdoor activities in Lebanon: 4-minute survey</title>
+<meta property="og:title" content="Outdoor activities in Lebanon: 4-minute survey">
+<meta property="og:description" content="Tell us what you do outdoors, what you'd like to try and what holds you back. Enter a draw for a free activity.">
+<script>
+  var links = [
+    "https://tally.so/r/bZejQe?price=A",
+    "https://tally.so/r/bZejQe?price=B",
+    "https://tally.so/r/bZejQe?price=C"
+  ];
+  var pick = null;
+  try { pick = localStorage.getItem("v"); } catch (e) {}
+  if (pick === null || !links[pick]) {
+    pick = Math.floor(Math.random() * links.length);
+    try { localStorage.setItem("v", pick); } catch (e) {}
+  }
+  location.replace(links[pick]);
+</script>
+</head>
+<body style="font-family: sans-serif; padding: 24px;">
+<p>Opening the survey... <a href="https://tally.so/r/bZejQe?price=B">Tap here if it doesn't open.</a></p>
+</body>
+</html>
